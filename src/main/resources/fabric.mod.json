@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "ollama-chat",
+	"version": "${version}",
+	"name": "Ollama Chat",
+	"description": "Chat with a local Ollama AI model from Minecraft chat. Multiple conversations, automatic memory, personas and model selection.",
+	"authors": [
+		"Bloodninja9"
+	],
+	"license": "BSD-2-Clause",
+	"icon": "assets/ollama-chat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ollamachat.OllamaChatMod"
+		]
+	},
+	"mixins": [
+		"ollama-chat.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
